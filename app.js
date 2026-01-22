@@ -48,11 +48,6 @@ function showQuestion() {
     answersDiv.appendChild(div);
   });
 }
-
-
-
-
-
  
 //restart shi
 document.getElementById("restart").addEventListener("click", () => {
@@ -60,4 +55,3 @@ document.getElementById("restart").addEventListener("click", () => {
   });
  
 showQuestion();
- 

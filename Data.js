@@ -1,251 +1,183 @@
 export const questions = [
   {
     id: 1,
-    question: "Kuri HTML versija yra naudojama šiuo metu?",
+    question:
+      "Kodėl po Antrojo pasaulinio karo Europos šalys pradėjo kurti bendras organizacijas, kurios vėliau tapo ES pagrindu?",
     answers: [
-      { text: 2, isCorrect: false },
-      { text: 5, isCorrect: true },
-      { text: 7, isCorrect: false },
-      { text: 3, isCorrect: false },
-      { text: 8.3, isCorrect: false },
+      { text: "Siekiant ekonominio atsigavimo ir ilgalaikės taikos", isCorrect: true },
+      { text: "Norint sukurti bendrą kariuomenę prieš kitas šalis", isCorrect: false },
+      { text: "Kad visos šalys turėtų vieningą politinę sistemą", isCorrect: false },
     ],
   },
   {
     id: 2,
-    question:
-      "Kokį HTML semantinį elementą parinktumėte tinklapio naujienai aprašyti?",
+    question: "Kuri iš šių šalių NĖRA Europos Sąjungos narė?",
     answers: [
-      { text: "<news>", isCorrect: false },
-      { text: "<article>", isCorrect: true },
-      { text: "<section>", isCorrect: false },
-      { text: "<main>", isCorrect: false },
-      { text: "Nėra teisingo atsakymo", isCorrect: false },
+      { text: "Italija", isCorrect: false },
+      { text: "Ispanija", isCorrect: false },
+      { text: "Norvegija", isCorrect: true },
+      { text: "Portugalija", isCorrect: false },
     ],
   },
   {
     id: 3,
-    question: "Kokią display reikšmę turi HTML a elementas pagal nutylėjimą?",
+    question:
+      "Kuri ES suteikiama galimybė labiausiai keičia žmonių kasdienį gyvenimą?",
     answers: [
-      { text: "inline", isCorrect: true },
-      { text: "block", isCorrect: false },
-      { text: "inline-block", isCorrect: false },
-      { text: "table", isCorrect: false },
+      {
+        text: "Galimybė laisvai gyventi, dirbti ir studijuoti kitose ES šalyse",
+        isCorrect: true,
+      },
+      {
+        text: "Tai, kad ES priima sprendimus už nacionalines vyriausybes",
+        isCorrect: false,
+      },
+      {
+        text: "Bendra ES valiuta, naudojama daugelyje šalių",
+        isCorrect: false,
+      },
     ],
   },
   {
     id: 4,
     question:
-      "Kuris selektorius yra teisingas norint stilių taikyti tik pdf failams?",
+      "Kuris miestas laikomas pagrindine Europos Sąjungos politine sostine?",
     answers: [
-      { text: "a[href >='.pdf']", isCorrect: false },
-      { text: "a[href $='.pdf']", isCorrect: false },
-      { text: "a[href only ='.pdf']", isCorrect: false },
-      { text: "a[href='.pdf']", isCorrect: true },
-      { text: "Nėra teisingo atsakymo", isCorrect: false },
+      { text: "Briuselis", isCorrect: true },
+      { text: "Strasbūras", isCorrect: false },
+      { text: "Liuksemburgas", isCorrect: false },
+      { text: "Frankfurtas", isCorrect: false },
     ],
   },
   {
     id: 5,
-    question:
-      "Kokią klasę reikia priskirti HTML blokui, kad jis Bootstrap grid'e užimtų 5 stulpelius praleidžiant vieną stulpelį?",
+    question: "Kokia yra pagrindinė „Erasmus+“ programos paskirtis?",
     answers: [
-      { text: ".columns-5-offset-1", isCorrect: false },
-      { text: ".col-sm5-1", isCorrect: false },
-      { text: ".col-sm-5 .col-offset-1", isCorrect: false },
-      { text: ".col-sm-5 .col-sm-offset-1", isCorrect: true }, // ar tikrai?
+      { text: "Studentų ir jaunimo mainai", isCorrect: true },
+      { text: "Švietimo ir mokymosi galimybių plėtra", isCorrect: false },
+      { text: "Studijos, praktika ir patirtys užsienyje", isCorrect: false },
+      { text: "Padėti šalims pagerinti turizmą", isCorrect: false },
     ],
   },
   {
     id: 6,
-    question:
-      "Kaip kintamajam antraste, kuriam priskirtas HTML elementas header pakeisti fono spalvą naudojant JavaScript?",
+    question: "Kiek žvaigždžių yra Europos Sąjungos vėliavoje?",
     answers: [
-      { text: "antraste.style.background-color = 'tomato';", isCorrect: false },
-      { text: "antraste.style.backgroundColor = 'tomato';", isCorrect: true },
-      { text: "antraste.css.background-color= 'tomato';", isCorrect: false },
-      { text: "Teisingo atsakymo nėra", isCorrect: false },
+      { text: "12", isCorrect: true },
+      { text: "Tiek, kiek ES šalių", isCorrect: false },
+      { text: "27", isCorrect: false },
     ],
   },
   {
     id: 7,
-    question: "Kaip importuoti išorinį scss failą į pagrindinį scss failą?",
+    question: "Ką simbolizuoja ES vėliavos žvaigždės?",
     answers: [
-      { text: "@include isorinis_failas", isCorrect: false },
-      { text: "@add isorinis_failas", isCorrect: false },
-      { text: "@import isorinis_failas", isCorrect: true },
-      { text: "Nėra teisingo varianto", isCorrect: false },
+      { text: "ES šalių skaičių", isCorrect: false },
+      { text: "Vienybę, solidarumą ir tobulumą", isCorrect: true },
+      { text: "Europos istorinius regionus", isCorrect: false },
     ],
   },
   {
     id: 8,
-    question:
-      "Kaip padaryt nuorodą į tėvinį html elementą a su tikslu aprašyti pseudo klasės :hover formatavimą?",
+    question: "Koks yra pagrindinis euro valiutos tikslas?",
     answers: [
-      { text: "extend a:hover", isCorrect: false },
-      { text: "into a:hover", isCorrect: false },
-      { text: "&:hover", isCorrect: true },
-      { text: "@:hover", isCorrect: false },
+      { text: "Palengvinti keliones", isCorrect: false },
+      { text: "Sustiprinti Europos tapatybę", isCorrect: false },
+      { text: "Supaprastinti prekybą ir ekonomiką", isCorrect: true },
+      { text: "Kontroliuoti infliaciją visame pasaulyje", isCorrect: false },
     ],
   },
   {
     id: 9,
-    question: "Kuris iš sąrašo nėra preprocesorius?",
+    question: "Kuri iš šių sričių dažniausiai finansuojama ES lėšomis?",
     answers: [
-      { text: "Ruby", isCorrect: true },
-      { text: "SASS", isCorrect: false },
-      { text: "LESS", isCorrect: false },
-      { text: "Stylus", isCorrect: false },
-      { text: "Nėra teisingo varianto", isCorrect: false },
+      { text: "Keliai ir infrastruktūra", isCorrect: false },
+      { text: "Švietimas ir mokslas", isCorrect: false },
+      { text: "Regionų vystymas", isCorrect: false },
+      { text: "Visos išvardytos", isCorrect: true },
     ],
   },
   {
     id: 10,
-    question:
-      "Kaip pasirinkti header elementą ir jį paslėpti naudojant jQuery?",
+    question: "Ką reiškia Šengeno erdvė?",
     answers: [
-      { text: "$('header').diplayNone();", isCorrect: false }, //nezinau
-      { text: "$('header').hide();", isCorrect: true },
-      { text: "$('header').hideIt();", isCorrect: false },
-      { text: "Nėra teisingo atsakymo.", isCorrect: false },
+      { text: "Bendrą valiutą", isCorrect: false },
+      {
+        text: "Laisvą asmenų judėjimą be sienų kontrolės",
+        isCorrect: true,
+      },
+      { text: "Bendrą gynybos sistemą", isCorrect: false },
     ],
   },
   {
     id: 11,
-    question: "Kokią template sistemą naudoja Drupal 8?",
+    question: "Kuri šalis NAUDOJA eurą, bet NĖRA Europos SąjungOS narė?",
     answers: [
-      { text: "HTML", isCorrect: false },
-      { text: "Smarty", isCorrect: false },
-      { text: "Twig", isCorrect: true },
-      { text: "PHP", isCorrect: false },
-      { text: "Nėra teisingo varianto", isCorrect: false },
+      { text: "Lenkija", isCorrect: false },
+      { text: "Norvegija", isCorrect: false },
+      { text: "Šveicarija", isCorrect: false },
+      { text: "Vatikanas", isCorrect: true },
     ],
   },
   {
     id: 12,
-    question: "Kuo skiriasi kintamieji let nuo var ?",
+    question: "Koks yra Europos Parlamento vaidmuo?",
     answers: [
-      { text: "Nesiskiria", isCorrect: false },
       {
-        text: "Var yra globalus kintamasis naudojamas visoje funkcijoje, o let yra vietinis kintamasis, naudojamas blokuose",
+        text: "Atstovauti ES piliečius ir priimti teisės aktus",
         isCorrect: true,
       },
       {
-        text: "Var kintamasis yra skirtas tik tekstiniams kintamiesiams aprašyti, o let numerių kintamiesiems",
+        text: "Vykdyti ES įstatymus valstybėse narėse",
         isCorrect: false,
       },
       {
-        text: "Var naudojamas tuomet kai kintamojo ilgis ne didesnis nei 5 simboliai, o let, kuomet daugiau nei 5",
+        text: "Atstovauti tik nacionalinėms vyriausybėms",
         isCorrect: false,
       },
-      { text: "Nėra teisingo atsakymo", isCorrect: false },
+      { text: "Skirti ES teisėjus", isCorrect: false },
     ],
   },
   {
     id: 13,
-    question: "Kam naudojamas 'use strict'?",
+    question:
+      "Kaip vadinasi ES programa, skirta moksliniams tyrimams ir inovacijoms?",
     answers: [
-      {
-        text: "‘Use strict’ naudojimas apsaugo neleisdamas atlikti tam tikrų veiksmų ir suteikia daugiau išimčių",
-        isCorrect: false,
-      },
-      {
-        text: "Užkerta kelią klaidoms kai atliekami palyginti “nesaugūs” veiksami",
-        isCorrect: false,
-      },
-      {
-        text: "Išjungia painias ir blogai apgalvotas funkcijas",
-        isCorrect: false,
-      },
-      { text: "Visi atsakymai tesisingi", isCorrect: true },
-      { text: "Nėra teisingo atsakymo", isCorrect: false },
+      { text: "Erasmus+", isCorrect: false },
+      { text: "Horizon Europe", isCorrect: true },
+      { text: "LIFE", isCorrect: false },
     ],
   },
   {
     id: 14,
-    question: "Kodėl CSS vadinami pakopiniais stiliais?",
+    question:
+      "Ar valstybė gali pati nuspręsti pasitraukti iš Europos Sąjungos?",
     answers: [
-      { text: "Kodas rašomas pakopomis", isCorrect: false },
-      {
-        text: "Pakopos nusako, kuri taisyklė yra svarbesnė ir bus taikoma elementui",
-        isCorrect: true,
-      },
-      {
-        text: "Įjungus CSS pakopas, galima naudoti !important",
-        isCorrect: false,
-      },
-      { text: "Teisingo atsakymo nėra", isCorrect: false },
+      { text: "Taip", isCorrect: true },
+      { text: "Ne", isCorrect: false },
     ],
   },
   {
     id: 15,
-    question: "Koks metodas naudojamas, norint sužinoti masyvo ilgį JS?",
-    answers: [
-      { text: "count", isCorrect: false },
-      { text: "length", isCorrect: true },
-      { text: "valueOf", isCorrect: false },
-      { text: "Nėra teisingo atsakymo", isCorrect: false },
-    ],
-  },
-  {
-    id: 16,
-    question: "Kiek laiko duomenys saugomi local storage?",
-    answers: [
-      { text: "Iki perkraunant puslapį", isCorrect: false },
-      { text: "Vieną parą", isCorrect: false },
-      { text: "Vieną mėnesį", isCorrect: false },
-      { text: "Metus laiko", isCorrect: false },
-      { text: "Neturi galiojimo laiko", isCorrect: true },
-    ],
-  },
-  {
-    id: 17,
     question:
-      "let kiekis = 12; \n" +
-      "console.log(++kiekis); \n" +
-      "Ką išves konsolėje?",
+      "Kuris teiginys apie Europos Sąjungą yra TEISINGAS?",
     answers: [
-      { text: "undefined", isCorrect: false },
-      { text: "12", isCorrect: false },
-      { text: "13", isCorrect: true },
-      { text: "Nieko", isCorrect: false },
-    ],
-  },
-  {
-    id: 18,
-    question: "Koks metodas naudojamas eilutės duomenis konvertuoti į masyvą?",
-    answers: [
-      { text: "shift()", isCorrect: false },
-      { text: "pop()", isCorrect: false },
-      { text: "splice()", isCorrect: false },
-      { text: "split()", isCorrect: true },
-    ],
-  },
-  {
-    id: 19,
-    question:
-      "function sveikas(){ \n" +
-      ' let vardas="Jonas" \n' +
-      "console.log(vardas)\n" +
-      "} \n" +
-      "sveikas();\n" +
-      "Ką atspausdins konsolėje?",
-    answers: [
-      { text: "Jonas", isCorrect: true },
-      { text: "vardas", isCorrect: false },
-      { text: "sveikas", isCorrect: false },
-      { text: "undefined", isCorrect: false },
-      { text: "nieko", isCorrect: false },
-    ],
-  },
-  {
-    id: 20,
-    question: "Kaip apibrėžiamas SASS kintamasis vardu spalva?",
-    answers: [
-      { text: "const sass spalva;", isCorrect: false },
-      { text: "const spalva;", isCorrect: false },
-      { text: "let spalva;", isCorrect: false },
-      { text: "$spalva string", isCorrect: false },
-      { text: "$spalva", isCorrect: true },
+      { text: "ES sprendžia tik ekonominius klausimus", isCorrect: false },
+      {
+        text:
+          "ES valstybės narės perduoda dalį savo sprendimų ES institucijoms",
+        isCorrect: true,
+      },
+      {
+        text:
+          "ES gali savarankiškai panaikinti nacionalinius įstatymus be valstybių sutikimo",
+        isCorrect: false,
+      },
+      {
+        text: "ES turi vieną bendrą vyriausybę visoms šalims",
+        isCorrect: false,
+      },
     ],
   },
 ];
+ 

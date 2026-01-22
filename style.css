@@ -1,111 +1,150 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   min-height: 100vh;
   margin: 0;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;   
-  align-items: center;       
-
-  background: linear-gradient(135deg, #00b3aa, #764ba2);
-  color: #000000;
-}
-
-
-.container {
-  display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
+  background:
+    linear-gradient(
+      rgba(0, 26, 77, 0.85),
+      rgba(0, 26, 77, 0.85)
+    ),
+    url("https://upload.wikimedia.org/wikipedia/commons/b/b7/Flag_of_Europe.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  height: 100vh;
 }
-
-
+ 
+.container {
+  min-height: 560px;
+  width: 500px;
+  max-width: 90%;
+  display: flex;
+  flex-direction: column;
+  height: 78%;
+}
+ 
+ 
 #progress {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   margin: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
-
+ 
 .bubble {
-  width: 40px;
-  height: 40px;
-  border: 2px solid #000000;
+  width: 42px;
+  height: 42px;
+  border: 2px solid #ffcc00;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  background: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  background: rgba(255, 204, 0, 0.15);
+  color: #ffcc00;
 }
-
+ 
 .correct {
-  background: #358b5c;
-  color: white;
+  background: #2e8b57;
+  color: #ffffff;
+  border-color: #ffffff;
 }
-
+ 
 .wrong {
-  background: #b42d2b;
-  color: white;
+  background: #b22222;
+  color: #ffffff;
+  border-color: #ffffff;
 }
-
+ 
 #quiz {
   text-align: center;
   width: 500px;
+  max-width: 90%;
 }
-
+ 
 #question {
-  font-size: clamp(20px, 3vw, 26px);
-  margin-bottom: 20px;
-  font-weight: bold;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 14px 18px;
+  border: 2px solid #ffcc00;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.35);
+  font-size: 20px;
 }
-
+ 
+ 
+ 
 #answers {
+  min-height: 240px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  justify-content: center;
+  gap: 14px;
 }
-
+ 
+ 
 .answer {
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 14px;
   font-size: 18px;
   cursor: pointer;
-  background: #676edb;
-  color: #000000;
-  border: 2px solid black;
-  transition: transform 0.2s, background 0.2s;
+  background: linear-gradient(135deg, #003399, #0047ab);
+  color: #ffffff;
+  border: 2px solid #ffcc00;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
-
+ 
 .answer:hover {
-  background: #f1f1f1;
-  transform: scale(1.03);
+  background: #ffcc00;
+  color: #003399;
+  transform: scale(1.04);
+  box-shadow: 0 0 10px rgba(255, 204, 0, 0.6);
 }
-
+ 
 .answer:active {
-  transform: scale(0.98);
+  transform: scale(0.97);
 }
-
+ 
 #restart {
-  margin-top: 25px;
-  padding: 0.8em 1.6em;
+  margin-top: 28px;
+  padding: 0.8em 1.8em;
   font-size: clamp(16px, 2.5vw, 20px);
-  border-radius: 10px;
-  border: none;
+  border-radius: 12px;
+  border: 2px solid #ffcc00;
   cursor: pointer;
-  background: #00af7b;
-  color: #000000;
-  transition: transform 0.2s, background 0.2s;
-  border: 2px solid black
+  background: #003399;
+  color: #ffcc00;
+  font-weight: bold;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
 }
-
+ 
 #restart:hover {
-  background: #ffffff;
-  transform: scale(1.05);
+  background: #ffcc00;
+  color: #003399;
+  transform: scale(1.06);
+  box-shadow: 0 0 12px rgba(255, 204, 0, 0.7);
 }
-
+ 
 #restart:active {
   transform: scale(0.95);
+}
+ 
+.restartButtonDiv{
+   
+  display: flex;
+  justify-content: flex-end;
+  width: 90%;
+  height: 10%;
+ 
 }
